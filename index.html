@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<body lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <title>Contact Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<section>
+
+  <div class="contact_form">
+    <h1>Contact Us</h1>
+    <form action="#" class="submit_form">
+
+      <div id="full_name">
+        <div>
+          <label for="name">First Name *</label>
+          <input type="text" id="name" required>
+        </div>
+        <div>
+          <label for="lastname">Last Name *</label>
+          <input type="text" id="lastname" required>
+        </div>
+      </div>
+
+      <div class="email_container">
+        <label for="email">Email Address *</label>
+        <input type="email" id="email" required>
+      </div>
+
+      <p class="query">Query Type *</p>
+      <div id="full_name" class="select_query">
+        <div>
+          <input type="radio" id="gender" name="query_type" required>
+          <label for="gender">Gender Enquiry</label>
+        </div>
+        <div>
+          <input type="radio" id="support" name="query_type" required>
+          <label for="support">Support Request</label>
+        </div>
+      </div>
+
+      <div class="email_container">
+        <label for="text">Message</label>
+        <textarea rows="6" type="text" id="text" required></textarea>
+      </div>
+
+        <input type="checkbox" id="number" name="number"/>
+        <label for="number"> I consent to being contacted by the team *</label>
+       
+        <button type="submit">Submit</button> 
+</form>
+
+</div>
+</section>
+</body>
+</html>
